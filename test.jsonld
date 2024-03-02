@@ -1,0 +1,341 @@
+{
+  "@context": [
+    {
+      "@base": "arcp://uuid,61432382-8118-5ab5-b447-db225b2f0afd/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "trov": "https://w3id.org/trace/2023/05/trov#"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "tro",
+      "@type": "trov:TransparentResearchObject",
+      "trov:name": "FRED API Example",
+      "trov:description": "Analysis and visualization of S&P500 data using FRED API. S&P 500 data is copyrighted and redistribution is not permitted without permission. The analysis requires use of a private FRED API key that cannot be redistributed.",
+      "trov:createdBy": "Craig Willis",
+      "trov:createdDate": "2024-02-20",
+      "trov:hasArrangement": [
+        {
+          "@id": "arrangement/0",
+          "@type": "trov:ArtifactArrangement",
+          "rdfs:comment": "Initial arrangement",
+          "trov:hasLocus": [
+            {
+              "@id": "arrangement/0/locus/0",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/0"
+              },
+              "trov:hasLocation": ".dockerignore"
+            },
+            {
+              "@id": "arrangement/0/locus/1",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/1"
+              },
+              "trov:hasLocation": ".gitignore"
+            },
+            {
+              "@id": "arrangement/0/locus/2",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/2"
+              },
+              "trov:hasLocation": "fred_apikey.txt"
+            },
+            {
+              "@id": "arrangement/0/locus/3",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/3"
+              },
+              "trov:hasLocation": "requirements.txt"
+            },
+            {
+              "@id": "arrangement/0/locus/4",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/4"
+              },
+              "trov:hasLocation": "run.sh"
+            },
+            {
+              "@id": "arrangement/0/locus/5",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/5"
+              },
+              "trov:hasLocation": "trace.json"
+            },
+            {
+              "@id": "arrangement/0/locus/6",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/6"
+              },
+              "trov:hasLocation": "scripts/fred.py"
+            }
+          ]
+        },
+        {
+          "@id": "arrangement/1",
+          "@type": "trov:ArtifactArrangement",
+          "rdfs:comment": "Final arrangement",
+          "trov:hasLocus": [
+            {
+              "@id": "arrangement/1/locus/0",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/0"
+              },
+              "trov:hasLocation": ".dockerignore",
+              "trov:createdBy": "trs"
+            },
+            {
+              "@id": "arrangement/1/locus/1",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/1"
+              },
+              "trov:hasLocation": ".gitignore"
+            },
+            {
+              "@id": "arrangement/1/locus/2",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/2"
+              },
+              "trov:hasLocation": "fred_apikey.txt",
+              "trov:excluded": "Private"
+            },
+            {
+              "@id": "arrangement/1/locus/3",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/3"
+              },
+              "trov:hasLocation": "requirements.txt"
+            },
+            {
+              "@id": "arrangement/1/locus/4",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/4"
+              },
+              "trov:hasLocation": "run.sh"
+            },
+            {
+              "@id": "arrangement/1/locus/5",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/5"
+              },
+              "trov:hasLocation": "trace.json"
+            },
+            {
+              "@id": "arrangement/1/locus/6",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/6"
+              },
+              "trov:hasLocation": "scripts/fred.py"
+            },
+            {
+              "@id": "arrangement/1/locus/7",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/7"
+              },
+              "trov:hasLocation": ".docker_stats",
+              "trov:createdBy": "trs"
+            },
+            {
+              "@id": "arrangement/1/locus/8",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/8"
+              },
+              "trov:hasLocation": ".entrypoint",
+              "trov:createdBy": "trs"
+            },
+            {
+              "@id": "arrangement/1/locus/9",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/9"
+              },
+              "trov:hasLocation": ".stdout",
+              "trov:createdBy": "trs"
+            },
+            {
+              "@id": "arrangement/1/locus/10",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/10"
+              },
+              "trov:hasLocation": "data/sp500.csv",
+              "trov:excluded": "License"
+            },
+            {
+              "@id": "arrangement/1/locus/11",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/11"
+              },
+              "trov:hasLocation": "data/sp500.json",
+              "trov:excluded": "License"
+            },
+            {
+              "@id": "arrangement/1/locus/12",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/12"
+              },
+              "trov:hasLocation": "results/sp500.png"
+            }
+          ]
+        }
+      ],
+      "trov:hasAttribute": [
+        {
+          "@id": "tro/attribute/1",
+          "@type": "trov:IncludesAllInputData",
+          "trov:warrantedBy": {
+            "@id": "trp/1/attribute/1"
+          }
+        }
+      ],
+      "trov:hasComposition": {
+        "@id": "composition/1",
+        "@type": "trov:ArtifactComposition",
+        "trov:hasArtifact": [
+          {
+            "@id": "composition/1/artifact/0",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "text/plain",
+            "trov:sha256": "35b06fd85ed2da00cd31c90619cf67fca535c6133d02001b0d68aaa2d1c240f8"
+          },
+          {
+            "@id": "composition/1/artifact/1",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "text/plain",
+            "trov:sha256": "8f9d1a1c8180ac4c53458437d88ff77afec02726e9204f902572724877f6f803"
+          },
+          {
+            "@id": "composition/1/artifact/2",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "text/plain",
+            "trov:sha256": "5157474cd090e9b09c9cc4a29134c3ce4d297a91dbe57b3c2d5ecfebc5efc85a"
+          },
+          {
+            "@id": "composition/1/artifact/3",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "text/plain",
+            "trov:sha256": "79056c6a6c4bf5c13958768148cbc1a0db8e91717a7834c494c9c0e2d7b33030"
+          },
+          {
+            "@id": "composition/1/artifact/4",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "text/x-shellscript",
+            "trov:sha256": "c38107430682ca6466f61421f40aa13bf5cab30f772df6cc19176d84ba8f1a8e"
+          },
+          {
+            "@id": "composition/1/artifact/5",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "application/json",
+            "trov:sha256": "79d0ab04e05caa08a1df2092c9e42071cc3059becb797bfd185c563dc6027fe6"
+          },
+          {
+            "@id": "composition/1/artifact/6",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "text/plain",
+            "trov:sha256": "25f9160f2bd6fb2049775e75f710d8a74f9cbda7123a007c9c95e2b1f0445f89"
+          },
+          {
+            "@id": "composition/1/artifact/7",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "text/plain",
+            "trov:sha256": "a101a083f8b39935dd64af9f3ec0c55cee24be18aa515f6f701aa7f624b5deb2"
+          },
+          {
+            "@id": "composition/1/artifact/8",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "text/plain",
+            "trov:sha256": "d31ce0453051853c17ba2a5225b3d1bfab548e095bab0967d6acfd1b3ce1b35d"
+          },
+          {
+            "@id": "composition/1/artifact/9",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "inode/x-empty",
+            "trov:sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "@id": "composition/1/artifact/10",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "text/csv",
+            "trov:sha256": "6e69b0bb10277374181f0db85645b79e0fd3c62566ecfc96211fe40c32ad2d57"
+          },
+          {
+            "@id": "composition/1/artifact/11",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "application/json",
+            "trov:sha256": "6c8a7f95f6983118bae3990adb3f260c2c65d46bccb321e1b7ee218c14030015"
+          },
+          {
+            "@id": "composition/1/artifact/12",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "image/png",
+            "trov:sha256": "a2e7e801f4790a3cfb843869e9fcb8d930bbec62f61cef0ea65399ae089f5bb7"
+          }
+        ],
+        "trov:hasFingerprint": {
+          "@id": "fingerprint",
+          "@type": "trov:CompositionFingerprint",
+          "trov:sha256": "1a7b81e0f5aebdf070f8dcc13ea366a3c2a77f8d6295cb1995b4c95aa79cef20"
+        }
+      },
+      "trov:hasPerformance": {
+        "@id": "trp/1",
+        "@type": "trov:TrustedResearchPerformance",
+        "rdfs:comment": "Workflow execution",
+        "trov:accessedArrangement": {
+          "@id": "arrangement/0"
+        },
+        "trov:endedAtTime": "2024-03-02T10:21:26.848675",
+        "trov:hadPerformanceAttribute": {
+          "@id": "trp/1/attribute/1",
+          "@type": "trov:InternetIsolation",
+          "trov:warrantedBy": {
+            "@id": "trs/capability/1"
+          }
+        },
+        "trov:modifiedArrangement": {
+          "@id": "arrangement/1"
+        },
+        "trov:startedAtTime": "2024-03-02T10:21:24.274858",
+        "trov:wasConductedBy": {
+          "@id": "trs"
+        }
+      },
+      "trov:wasAssembledBy": {
+        "@id": "trs",
+        "@type": "trov:TrustedResearchSystem",
+        "rdfs:comment": "TRS Reference Implementation",
+        "trov:owner": "TRACE Project",
+        "trov:description": "TRACE System Reference Implementation",
+        "trov:contact": "trace@transparency-certified.org",
+        "trov:hasCapability": [
+          {
+            "@id": "trs/capability/1",
+            "@type": "trov:CanProvideInternetIsolation",
+            "trov:name": "CanProvideInternetIsolation",
+            "trov:description": "System can disable network access during workflow execution."
+          }
+        ],
+        "trov:publicKey": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\n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\nqENJJGwGwcdqqm1qfGuYYihO0MurIMY=\n=Qp7y\n-----END PGP PUBLIC KEY BLOCK-----\n"
+      }
+    }
+  ]
+}
