@@ -325,7 +325,8 @@
         "rdfs:comment": "TRS Reference Implementation",
         "trov:owner": "TRACE Project",
         "trov:description": "TRACE System Reference Implementation",
-        "trov:contact": "trace@transparency-certified.org",
+        "trov:contact": "trace@trace-poc.xyz",
+        "trov:url": "https://server.trace-poc.xyz",
         "trov:hasCapability": [
           {
             "@id": "trs/capability/1",
